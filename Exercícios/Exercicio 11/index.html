@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídeas HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+
+    <picture> <!--Imagens menores sempre acima das maiores na tag source. Para que não fique uma barra de rolagem lateral max-width deve ser uns 50px a mais que a largura da imagem-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande">
+    </picture>
+
+    <h1>Reproduindo Áudio</h1>
+
+    <!-- Esta é a primeira forma de adcionar um áudio, no entando, dessa forma conseguimos adicionar apenas um formato.
+
+    <audio src="midia/guanacast-33.mp3" controls autoplay ></audio>
+
+
+    A forma abaixo permite configurar mais de um formato. Os formatos de áudio são MPEG, WAV e OGG. 
+    É muito importante configurar o atributo preload na tag audio como metadata, assim, ele carregará as informações do áudio e não o áudio completo, o que afetará no carregamento da página. Dessa forma o áudio só é carregado completamente se o usuário clicar no play.
+    Ver no PDF os atributos na tag audio no pdf-->
+    
+    <audio preload="metadata" controls > <!--A ordem dos source inidcará qual dos arquivos o navegador tentará carregar primeiro. É importante colocar o paragrafo au final para caso o navegador não suporte o carregamento de áudio o usuário possa baixar-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"><!--WAV é um arquivo pesado então opte por mp3 e ogg-->
+        <p>Não conseguiu escutar o áudio? <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">Clique aqui</a></p>
+    </audio>
+
+</body>
+</html>

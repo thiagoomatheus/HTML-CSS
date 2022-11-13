@@ -1,0 +1,50 @@
+/*Geral*/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+li {
+    padding: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 1.2em;
+}
+
+/*Página Cinza*/
+
+body#cinza {
+    background-color: rgb(189, 186, 186);
+}
+
+body#cinza a{
+    color: rgb(235, 235, 235);
+}
+
+/*Página Verde*/
+
+body#verde {
+    background-color: rgb(150, 245, 150);
+    color: rgb(14, 161, 46);
+}
+
+body#verde a{
+    color: rgb(0, 87, 51);
+}
+
+/*Página Amarela*/
+
+body#amarelo {
+    background-color: rgb(255, 255, 163);
+    color: rgb(182, 151, 12);
+}
+
+body#amarelo a{
+    color: rgb(88, 92, 57);
+}

@@ -1,0 +1,11 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li {
+    padding: 0.2em;
+}
+
+abbr:hover {
+    color: rgba(248, 16, 16, 0.918);
+}
