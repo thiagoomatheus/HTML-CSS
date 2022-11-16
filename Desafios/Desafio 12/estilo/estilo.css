@@ -74,12 +74,12 @@ p.backgroud {
 }
 
 section#imagem1 {
-    background: green url(imagens/background001.jpg) right center fixed no-repeat;
+    background: green url(../imagens/background001.jpg) right center fixed no-repeat;
     background-size: cover;
 }
 
 section#imagem2 {
-    background: rgb(223, 223, 191) url(imagens/background002.jpg) right center fixed no-repeat;
+    background: rgb(223, 223, 191) url(../imagens/background002.jpg) right center fixed no-repeat;
     background-size: cover;
 }
 
