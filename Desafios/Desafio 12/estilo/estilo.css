@@ -42,7 +42,7 @@ header {
 header h1 {
     font-family: var(--fonte-titulo);
     font-weight: bold;
-    font-size: 9vw;
+    font-size: 10vw;
     font-variant: small-caps; /*Deixa todas as letras maiusculas, mas com a diferenciação da altura entre maiuscula e minuscula*/
 }
 
@@ -73,16 +73,19 @@ section {
 p.backgroud {
     background: rgba(0, 0, 0, 0.514);
     color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 section#imagem1 {
     background: green url(../imagens/background001.jpg) right center fixed no-repeat;
     background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
 }
 
 section#imagem2 {
     background: rgb(223, 223, 191) url(../imagens/background002.jpg) right center fixed no-repeat;
     background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
 }
 
 /*Rodapé*/
