@@ -14,6 +14,22 @@ Grandes Telas: acima de 1200px
 
 @media print { /*IMPRESSÃO*/
 
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
